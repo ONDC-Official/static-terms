@@ -1,0 +1,1088 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 5237
+>>
+stream
+0.200025 w
+0 G
+BT
+/F2 18 Tf
+20.6999999999999993 TL
+0.118 g
+54. 787.8899999999999864 Td
+(LanceIQ Static Terms for ONDC Logistics) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 752.8899999999999864 Td
+(Version: 0.1.0) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 729.8899999999999864 Td
+(Domain: ONDC:LOG10) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 706.8899999999999864 Td
+(Effective Date: 2026-04-16) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 683.8899999999999864 Td
+(Network Participant: LanceIQ) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 660.8899999999999864 Td
+(Subscriber ID: lanceiq.com) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 637.8899999999999864 Td
+(Document Status: Submitted for ONDC static-terms review.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 606.8899999999999864 Td
+(1. Scope) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 582.8899999999999864 Td
+(These static terms apply to logistics services exposed by LanceIQ on the ONDC network as a Logistics) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 568.8899999999999864 Td
+(Service Provider / provider-side participant for the ONDC:LOG10 domain.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 545.8899999999999864 Td
+(These terms cover quote discovery, order selection, order initialization, order confirmation, pickup,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 531.8899999999999864 Td
+(shipment movement, tracking/status updates, cancellation, issue management, and settlement-related) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 517.8899999999999864 Td
+(operational responsibilities for logistics transactions routed through LanceIQ.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 486.8899999999999864 Td
+(2. Service Model) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 462.8899999999999864 Td
+(LanceIQ provides the Beckn/ONDC protocol infrastructure and logistics orchestration layer for transport) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 448.8899999999999864 Td
+(companies and logistics operators that want to connect to ONDC without building and maintaining the) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 434.8899999999999864 Td
+(complex protocol infrastructure themselves.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 411.8899999999999864 Td
+(Transport companies may use LanceIQ as their ONDC technology layer while their own logistics) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 397.8899999999999864 Td
+(operations, capacity, pricing rules, serviceability rules, and shipment execution remain the operational) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 383.8899999999999864 Td
+(source of truth.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 360.8899999999999864 Td
+(LanceIQ may use internal operations, affiliated logistics capacity, or third-party logistics partners to) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 346.8899999999999864 Td
+(service a shipment.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 323.8899999999999864 Td
+(Serviceability, price, estimated turnaround time, pickup feasibility, delivery feasibility, and cancellation) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 309.8899999999999864 Td
+(eligibility are determined at the time of quote and may depend on origin, destination, package weight,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 295.8899999999999864 Td
+(dimensions, category, operational capacity, and applicable network rules.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 264.8899999999999864 Td
+(3. Orders and Booking) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 240.8899999999999864 Td
+(A logistics order is treated as valid only after LanceIQ sends an accepted confirmation response through) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 226.8899999999999864 Td
+(the applicable ONDC protocol action.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 203.8899999999999864 Td
+(Buyer apps and other network participants must provide complete and accurate shipment details,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 189.8899999999999864 Td
+(including pickup location, drop location, contact details, package weight, package dimensions, declared) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 175.8899999999999864 Td
+(category, payment details where applicable, and any special handling instructions.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 152.8899999999999864 Td
+(LanceIQ may reject or NACK a request if mandatory details are missing, malformed, unverifiable,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 138.8899999999999864 Td
+(unsupported, or outside serviceability.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 107.8899999999999864 Td
+(4. Pricing and Quote Validity) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 83.8899999999999864 Td
+(Prices returned by LanceIQ are in INR unless otherwise stated in the payload.) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.431 g
+54. 30. Td
+(LanceIQ Static Terms v0.1.0 | Page 1) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 5579
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+54. 787.8899999999999864 Td
+(Quoted prices may include base freight, distance charges, weight charges, handling charges, taxes, and) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+54. 773.8899999999999864 Td
+(other applicable logistics fees where shown in the quote breakup.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 750.8899999999999864 Td
+(Quotes are valid only for the TTL or validity period communicated in the ONDC payload. A quote may) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 736.8899999999999864 Td
+(expire if the buyer app does not complete the next protocol step within the applicable validity window.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 705.8899999999999864 Td
+(5. Pickup and Delivery) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 681.8899999999999864 Td
+(Pickup and delivery obligations begin only after order confirmation and operational acceptance.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 658.8899999999999864 Td
+(Pickup and delivery timelines are estimated and may change due to traffic, weather, strikes, natural) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 644.8899999999999864 Td
+(events, regulatory checks, network disruption, inaccurate address details, receiver unavailability, force) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 630.8899999999999864 Td
+(majeure events, or other events outside reasonable control.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 607.8899999999999864 Td
+(LanceIQ may contact the sender, receiver, buyer app, or other authorized network participant for) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 593.8899999999999864 Td
+(shipment coordination.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 562.8899999999999864 Td
+(6. Cancellations) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 538.8899999999999864 Td
+(Cancellation requests must be submitted through the ONDC cancellation flow with a valid order reference) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 524.8899999999999864 Td
+(and reason code.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 501.8899999999999864 Td
+(Cancellation may be accepted, rejected, or partially chargeable depending on shipment status, whether) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 487.8899999999999864 Td
+(pickup has occurred, whether capacity has been allocated, and whether costs have already been) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 473.8899999999999864 Td
+(incurred.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 450.8899999999999864 Td
+(If a cancellation is accepted, LanceIQ will return the cancellation status and any applicable cancellation) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 436.8899999999999864 Td
+(charges through the ONDC protocol response.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 405.8899999999999864 Td
+(7. Returns and Reverse Movement) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 381.8899999999999864 Td
+(Where reverse logistics or return-to-origin is applicable, LanceIQ will process the request only if the) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 367.8899999999999864 Td
+(shipment, route, and operational status support reverse movement.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 344.8899999999999864 Td
+(Return or reverse movement charges, if applicable, will be communicated through the relevant ONDC) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 330.8899999999999864 Td
+(payloads or commercial terms.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 299.8899999999999864 Td
+(8. Refunds) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 275.8899999999999864 Td
+(Refunds, if any, are governed by the applicable ONDC transaction terms, settlement framework, and the) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 261.8899999999999864 Td
+(commercial arrangement between the relevant network participants.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 238.8899999999999864 Td
+(LanceIQ is responsible for communicating logistics-side refund eligibility or charge reversal information) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 224.8899999999999864 Td
+(where the refund is linked to logistics non-performance, cancellation acceptance, or failed service) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 210.8899999999999864 Td
+(delivery attributable to LanceIQ.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 187.8899999999999864 Td
+(Refund processing timelines may depend on the settlement participant, payment participant, buyer app,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 173.8899999999999864 Td
+(and network processes outside LanceIQ's direct control.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 142.8899999999999864 Td
+(9. Issue and Grievance Management) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 118.8899999999999864 Td
+(Issue management will follow the ONDC Issue and Grievance Management framework applicable to) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 104.8899999999999864 Td
+(logistics transactions.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 81.8899999999999864 Td
+(Issues may include delayed pickup, delayed delivery, shipment damage, lost shipment, wrong status,) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.431 g
+54. 30. Td
+(LanceIQ Static Terms v0.1.0 | Page 2) Tj
+ET
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 5420
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+54. 787.8899999999999864 Td
+(cancellation dispute, charge dispute, or other fulfillment-related complaints.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 764.8899999999999864 Td
+(LanceIQ will respond to valid IGM requests received through ONDC within the applicable network) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 750.8899999999999864 Td
+(timelines and will provide status updates, resolution details, or escalation information as required.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 719.8899999999999864 Td
+(10. Payouts, Settlement, and Reconciliation) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 695.8899999999999864 Td
+(Commercial settlement between network participants will follow the applicable ONDC settlement,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 681.8899999999999864 Td
+(reconciliation, and payment framework.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 658.8899999999999864 Td
+(LanceIQ will provide transaction references, order references, quote amounts, charge breakup,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 644.8899999999999864 Td
+(cancellation charges, and logistics status evidence reasonably required for reconciliation.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 621.8899999999999864 Td
+(LanceIQ is not responsible for settlement delays caused by incorrect payment details, buyer app errors,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 607.8899999999999864 Td
+(payment participant failures, banking delays, or disputes outside LanceIQ's control.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 576.8899999999999864 Td
+(11. Shipment Restrictions) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 552.8899999999999864 Td
+(LanceIQ may refuse shipments that are prohibited by law, restricted by ONDC policy, unsafe, hazardous,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 538.8899999999999864 Td
+(perishable without proper handling capability, improperly packed, misdeclared, uninsured where) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 524.8899999999999864 Td
+(insurance is required, or otherwise unsuitable for the selected logistics service.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 501.8899999999999864 Td
+(The sender and buyer app are responsible for accurate declaration of package contents, value, weight,) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 487.8899999999999864 Td
+(dimensions, and handling needs.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 456.8899999999999864 Td
+(12. Liability) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 432.8899999999999864 Td
+(LanceIQ's liability is limited to the logistics service obligations accepted in the confirmed ONDC) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 418.8899999999999864 Td
+(transaction and applicable law.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 395.8899999999999864 Td
+(LanceIQ is not liable for indirect, consequential, special, punitive, business interruption, loss of profit, or) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 381.8899999999999864 Td
+(loss of goodwill damages.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 358.8899999999999864 Td
+(For loss, damage, delay, failed pickup, failed delivery, or cancellation disputes, liability will be determined) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 344.8899999999999864 Td
+(based on shipment evidence, protocol logs, operational records, and applicable ONDC rules.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 313.8899999999999864 Td
+(13. Data and Evidence) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 289.8899999999999864 Td
+(LanceIQ may store transaction payloads, status history, audit logs, timestamps, shipment references, and) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 275.8899999999999864 Td
+(operational evidence for compliance, reconciliation, issue resolution, fraud prevention, and network audit) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 261.8899999999999864 Td
+(purposes.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 238.8899999999999864 Td
+(Data handling will follow applicable law, ONDC requirements, and LanceIQ's published privacy and) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 224.8899999999999864 Td
+(security practices.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 193.8899999999999864 Td
+(14. Changes to Static Terms) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 169.8899999999999864 Td
+(LanceIQ may update these static terms by publishing a new version in the ONDC static-terms repository.) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 155.8899999999999864 Td
+(Updated terms apply prospectively from the effective date of the published version unless otherwise) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 141.8899999999999864 Td
+(required by ONDC or law.) Tj
+ET
+BT
+/F2 12.5 Tf
+14.3749999999999982 TL
+0.118 g
+54. 110.8899999999999864 Td
+(15. Contact and Escalation) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 86.8899999999999864 Td
+(Operational contact: deepmishra1283@gmail.com) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.431 g
+54. 30. Td
+(LanceIQ Static Terms v0.1.0 | Page 3) Tj
+ET
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 629
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+54. 787.8899999999999864 Td
+(Website: https://lanceiq.com) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 764.8899999999999864 Td
+(Subscriber ID: lanceiq.com) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 741.8899999999999864 Td
+(These contact details should be used for ONDC logistics operational coordination, issue escalation, and) Tj
+ET
+BT
+/F1 10.5 Tf
+12.0749999999999993 TL
+0.118 g
+54. 727.8899999999999864 Td
+(static-terms-related communication.) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.431 g
+54. 30. Td
+(LanceIQ Static Terms v0.1.0 | Page 4) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R ]
+/Count 4
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+21 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+22 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+23 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 11 0 R
+/F2 12 0 R
+/F3 13 0 R
+/F4 14 0 R
+/F5 15 0 R
+/F6 16 0 R
+/F7 17 0 R
+/F8 18 0 R
+/F9 19 0 R
+/F10 20 0 R
+/F11 21 0 R
+/F12 22 0 R
+/F13 23 0 R
+/F14 24 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+25 0 obj
+<<
+/Producer (jsPDF 4.2.0)
+/CreationDate (D:20260417000403+05'30')
+>>
+endobj
+26 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 27
+0000000000 65535 f 
+0000017637 00000 n 
+0000019477 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000005441 00000 n 
+0000005578 00000 n 
+0000011209 00000 n 
+0000011346 00000 n 
+0000016818 00000 n 
+0000016956 00000 n 
+0000017712 00000 n 
+0000017838 00000 n 
+0000017969 00000 n 
+0000018103 00000 n 
+0000018241 00000 n 
+0000018365 00000 n 
+0000018494 00000 n 
+0000018626 00000 n 
+0000018762 00000 n 
+0000018890 00000 n 
+0000019017 00000 n 
+0000019146 00000 n 
+0000019279 00000 n 
+0000019381 00000 n 
+0000019730 00000 n 
+0000019816 00000 n 
+trailer
+<<
+/Size 27
+/Root 26 0 R
+/Info 25 0 R
+/ID [ <97CDBDD1E7F7181EB70CF702D699157E> <97CDBDD1E7F7181EB70CF702D699157E> ]
+>>
+startxref
+19920
+%%EOF
