@@ -21,8 +21,8 @@ Welcome to the Static-Terms repository, designed for storing static terms utiliz
 
 > \*Examples:
 >
-> - Retail: https://github.com/ONDC-Official/static-terms/blob/master/RET/BNP/0.1.0/static_terms.pdf
-> - Logistics: https://github.com/ONDC-Official/static-terms/blob/master/LOG/LSP/0.1.0/static_terms.pdf
+> - Retail: `https://github.com/ONDC-Official/static-terms/blob/master/RET/BNP/0.1.0/static_terms.pdf`
+> - Logistics: `https://github.com/ONDC-Official/static-terms/blob/master/LOG/LSP/0.1.0/static_terms.pdf`
 
 **Commit and Push changes:**
 
