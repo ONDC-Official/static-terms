@@ -1,0 +1,1 @@
+Lekhha Retail Static Terms
