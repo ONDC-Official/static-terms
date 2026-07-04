@@ -1,0 +1,1 @@
+DittoMart ONDC static terms
