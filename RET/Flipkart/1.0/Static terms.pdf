@@ -1,0 +1,407 @@
+Reference clauses for drafting static terms of the transaction level contract
+
+Version History
+
+Version
+Date
+Description / Changes
+0.1
+2023-05-08
+First Draft
+0.2
+2023-09-25
+Second Draft (released to NPs for feedback)
+0.3
+2023-11-03
+Third Draft (incorporating comments from NPs)
+1.0
+2024-02-26
+Final Document
+
+
+PURPOSE OF THIS DOCUMENT
+V1.2 of the ONDC API Specification is going to allow Network Participants (NPs) to add some of their own standard contractual terms to the digital Transaction Level Contract. These standard terms (hereafter referred to as “static terms”) will be inserted into the digital contract as a URL which will be mapped to the “static_terms” attribute in the API Specification. These are boilerplate contractual terms which do not change from one transaction to another (hence the name static terms) - such as indemnity, force majeure etc. The static terms hosted on the URL specified by the NP, along with the payload of the APIs will form the contract between the Buyer App and Seller App for a given transaction.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Business Partnership Agreement
+This Business Partnership Agreement (Agreement) is entered into between
+Flipkart Internet Pvt. Ltd., a company incorporated under the Companies Act, 2013 having its registered office at:
+
+Buildings Alyssa Begonia Clover Survey
+No:-12/4-12/10,13 (P)
+14/3-14/9,14/11(P),14/13--14/15
+Devarabeesanahalli Village Varthur Hobli
+Bangalore East Taluk Bangalore Karnataka
+560103, Bangalore Urban, Karnataka-560103
+(referred to as Buyer App), and Seller Network Participant that is part of the ONDC Network (Seller App). 
+Seller App has agreed to avail Buyer App’s  services for the purpose of facilitating order placed by the Buyer. Buyer App and Seller App are hereinafter collectively referred to as the Parties and individually as the Party. 
+WHEREAS
+Flipkart Internet Pvt. Ltd. has onboarded the ONDC Network as a Buyer Side Application and enables Buyers to purchase any products using its digital platform
+Seller App have onboarded the ONDC Network as a Seller Side Application and are desirous of availing following services from the Buyer App
+Identify potential buyers on the basis of the criteria provided by Seller App
+Facilitate Buyers to purchase Seller’s goods or services 
+The terms and conditions provided hereinafter including the terms and conditions exchanged between the Parties through the ONDC Protocol (Confirmation) will govern the relationship between the Parties. 
+Definitions: All terms used herein, unless the context otherwise requires or unless specifically defined herein, shall have the meanings ascribed to them in the ONDC Network Policy or ONDC Network Participant Agreement, as the case may be. 
+Business Day: Business Day shall mean a day other than Saturday, Sunday or public holidays as declared by the Government of India or State Government or any other Competent Authority.
+Confirmation: as defined in the preamble of the Agreement
+Delivery - Delivery means (a) collection of the Shipments by the Party procuring logistics from the location(s) agreed between the Parties; and (b) the delivery of such Shipments to the Buyer at the location designated by the Buyer..
+Order: Order shall mean all purchases made by the Buyer on the ONDC Network through the Buyer App, Seller App and Seller, Gateway and Logistics Service Provider, as applicable
+Product(s): shall mean the Product(s) and/or Service(s) made available by the Seller App, or any related deal/gift card/gift voucher/electronic code
+Settlement Window: shall mean the specified number of Business Days from the date of collection, shipment or delivery or end of the Return Window, as provided in the Confirmation, within which the Network Participants will settle the amounts owed to each other.
+Shipments: Products consolidated and packaged together and handed over to the Party procuring logistics or a Logistics Service Provider engaged by such Party. 
+ETA: Estimated time of Arrival as communicated by the seller App to Buyer App in configurable terms of TLC.
+Hyperlocal: Delivery within city/town limits
+Intercity: Delivery beyond city/town limits
+OFD: Order for Food Delivery Products (E.g. Food & Beverage Items which are prepared on order).  Seller App is responsible to communicate to the Buyer App if the item is non-cancellable.  In the event such items are marked as cancellable then this attribute in the transaction level contract will prevail over the static terms mentioned below.
+Non-OFD: Order other than OFD or Made to Order ( E.g. Fashion, Electronics, Beauty Products etc - Products which are manufactured / Produced without awaiting order from the buyer. 
+Made to Order: Order that is not OFD but for a product that is nevertheless Prepared / Procured after order by the buyer (made to order sarees, customised prints, fresh meats packed per order) etc. Seller App is responsible to communicate to the Buyer if the item is non-cancellable.  In the event such items are marked as cancellable then this attribute in the transaction level contract will prevail over the static terms mentioned below.
+Quality Issues: Including but not limited to quantity mismatch or products that are expired, damaged, defective, spoiled, or packaging issues or wrong items, missing items etc.
+RTO: Return of Goods to Original Pickup Address (If Post shipment, an order is not delivered to the customer due to any reason, then it is marked as RTO and usually returned to the seller's address)
+Buyer Cancellation: Buyer Cancellation or Buyer Cancellation Requests include refusal by buyer to accept delivery
+
+Cancellation (Pre-Shipment)
+
+Order Type
+Cases
+Case Description
+Delivery Type
+Resolution Remarks
+OFD/Made to Order
+Case 1 
+ETA Breach
+Buyer requests cancellation - when the order is not even shipped within ETA + 20 minutes
+
+
+
+
+Hyperlocal Or Intercity
+Flipkart Internet Pvt. Ltd. will not be liable to pay any amount to Seller App on cancellation of such orders.
+Case 2 
+No ETA Breach
+Buyer requests cancellation - when there is no ETA breach
+Flipkart Internet Pvt. Ltd. will be liable to pay order value to the seller APP as per the quote relayed by Seller App irrespective of cancellation
+Non-OFD
+Case 1 
+ETA Breach
+Buyer requests cancellation - when order is not even shipped within ETA 
+(Irrespective of item being cancellable or non-cancellable)
+Flipkart Internet Pvt. Ltd. will not be liable to pay any amount to Seller App on cancellation of such orders.
+For Hyperlocal orders only, where cancellation is requested after delivery partner is assigned then Flipkart Internet Pvt. Ltd. will be liable to 50% of forward shipping cost to seller app.
+Case 2
+No ETA Breach
+Buyer requests cancellation - wherein there is no ETA breach.
+(Irrespective of item being cancellable or non-cancellable)
+Flipkart Internet Pvt. Ltd. will not be liable to pay any amount to Seller App as Seller App is expected to accept cancellation & not proceed with the order
+For Hyperlocal orders only, where cancellation is requested after delivery partner is assigned then Flipkart Internet Pvt. Ltd. will be liable to 50% of forward shipping cost to the seller app.
+
+
+
+Cancellation (post-shipment*)
+
+
+* Buyer / Buyer APP may initiate Post shipment cancellation by way of the following 
+i. Non receipt / acceptance by the buyer of the product on attempted delivery. OR
+ii. Issue over IGM (Issues and Grievances Management) for refund due to delay in delivery or any other head and acceptance by the seller / seller APP of refund, while delivery is pending.   
+Post shipment cancellation requests over Cancel API or any API other than IGM shall not be valid, if nack’d or rejected by the seller / seller APP.
+
+
+Order Type
+Cases
+Case Description
+Delivery Type
+Resolution Remarks
+OFD/Made to Order
+1a. OFD
+ETA Breach 
+Buyer requests cancellation - when order has been shipped but not delivered within ETA + 20  Minutes
+Hyperlocal & Intercity
+Flipkart Internet Pvt. Ltd. will not be liable to pay any amount to Seller App on cancellation of such orders.
+1b. Made to Order
+ETA Breach 
+Buyer requests cancellation -  when order has been shipped but not delivered within ETA + 20 Minutes
+Flipkart Internet Pvt. Ltd. will not be liable to pay any amount to Seller App on cancellation of such orders.
+Case 2 
+No ETA Breach
+Buyer requests cancellation -  No amount is deducted from Buyer till 60 secs of order placement
+Flipkart Internet Pvt. Ltd. will be liable to pay order value to the seller APP as per the quote relayed by Seller App irrespective of cancellation
+Non - OFD (Returnable Product)
+Case 1 - ETA Breach 
+Buyer requests cancellation - when order has been shipped but not delivered within ETA + 20 Minutes
+
+
+
+Hyperlocal & Intercity
+Flipkart Internet Pvt. Ltd. will not be liable to pay any amount to Seller App on cancellation of such orders.
+Case 2 -
+No ETA Breach
+Buyer requests cancellation -  wherein order has been shipped and is yet to be delivered within defined ETA
+Flipkart Internet Pvt. Ltd. will not be liable to pay any amount to Seller App for cancellation of such orders - as product is returnable.
+Non - OFD (Non - Returnable Product)
+Case 1 - ETA Breach 
+Buyer requests cancellation - when order has been shipped but not delivered within ETA + 20 Minutes 
+
+
+
+Hyperlocal & Intercity
+Flipkart Internet Pvt. Ltd. will not be liable to pay any amount to Seller App for cancellation of such orders.
+Case 2 -
+No ETA Breach
+Buyer requests cancellation - when order has been shipped and is yet to be delivered within defined ETA
+Flipkart Internet Pvt. Ltd. is liable to pay only the Forward & RTO logistics cost to Seller App on cancellation of such orders as product is resalable.
+
+
+Refund/Return/Replacement (Post Delivery)
+
+Order Type
+Cases
+Case Description
+Delivery Type
+Resolution Remarks
+OFD/Made to Order
+Case 1 - Wrong order status 
+The order has been incorrectly marked as delivered, even though the order has never been delivered
+Hyperlocal & Intercity
+Basis the investigation conducted by Flipkart Internet Pvt. Ltd. & Seller App for identifying the source of the issue. 
+If the issue source lies with Flipkart Internet Pvt. Ltd. , it will pay the full order value as per the quote to Seller App. Conversely, if the issue source lies with the Seller App, Flipkart Internet Pvt. Ltd.  will not pay any amount to the Seller App.
+Case 2a - Quality issue
+OFD Order - Buyer raised issue for Quality of product delivered 
+Flipkart Internet Pvt. Ltd. will provide resolution to the buyer as per the remarks provided by Seller App (Basis the investigation).
+Case 2b - Quality issue
+Made to Order - Buyer raised issue for Quality of product delivered 
+Flipkart Internet Pvt. Ltd. will provide resolution to the buyer as per the remarks provided by Seller App (Basis the investigation).
+Non - OFD (Returnable/Non Returnable Product)
+Case 1
+The order has been incorrectly marked as delivered, even though the order has never been delivered
+Hyperlocal & Intercity 
+Basis the investigation conducted by Flipkart Internet Pvt. Ltd.  & Seller App for identifying the source of the issue. 
+If the issue source lies with Flipkart Internet Pvt. Ltd. , it will pay the full order value as per the quote to Seller App. Conversely, if the issue source lies with the Seller App, Flipkart Internet Pvt. Ltd. will not pay any amount to the Seller App.
+Case 2 
+Buyer raised issue for Quality of product delivered 
+Flipkart Internet Pvt. Ltd. will provide resolution to the buyer as per the remarks provided by Seller App (Basis the investigation).
+
+
+
+Note:
+
+In any event, Flipkart Internet Pvt. Ltd. chooses to provide a resolution to Buyer that is not proposed by the Seller APP, the additional costs of such resolution are to be borne by Internet Pvt. Ltd.  exclusively. Seller App is entitled to receive the amount specified post adjustment as per the resolution proposed by itself. (Applicable for Case 2 under both Cancellation & Refund/Return/Replacement as mentioned above).
+
+In an event where a resolution of refund to the buyer is provided by Seller APP, the Seller App may choose to process the refund either with or without pickup of the product delivered. In cases where a refund is to be issued with pickup, the Seller APP may confirm refund post pick up from the buyer. (Applicable for Case 2 under Refund/Return/Replacement as mentioned above). 
+
+Issue Resolution Response TAT
+
+Internet Pvt. Ltd.  expects closure by seller APP within the below timelines for respective Issue Sub Category listed in the IGM framework (Link).  If the Seller APP needs more information for closure of issue then the time to closure shall be calculated from the time of response by the buyer app to the need for information request from the Seller APP.
+
+Category
+Sub Category
+ENUMs
+Expected time to Resolve/Completed (ETC)
+OFD 
+Hyperlocal (Orders)
+Intercity (Orders)
+ORDER
+Order not received
+ORD01
+Inline
+N/A
+N/A
+Quality issue
+ORD02
+Inline
+N/A
+N/A
+Delayed delivery
+ORD03
+Inline
+N/A
+N/A
+ITEM
+Missing items
+ITM01
+Inline
+N/A
+N/A
+Quantity issue
+ITM02
+Inline
+N/A
+N/A
+Item mismatch
+ITM03
+Inline
+N/A
+N/A
+Quality issue
+ITM04
+Inline
+N/A
+N/A
+Expired item
+ITM05
+Inline
+N/A
+N/A
+FULFILMENT
+Wrong delivery address
+FLM01
+Inline
+N/A
+N/A
+Delay in delivery
+FLM02
+Inline
+N/A
+N/A
+Delayed delivery
+FLM03
+Inline
+N/A
+N/A
+Packaging
+FLM04
+Inline
+N/A
+N/A
+Buyer not found
+FLM05
+Inline
+N/A
+N/A
+Seller not found
+FLM06
+Inline
+N/A
+N/A
+Package info mismatch
+FLM07
+Inline
+N/A
+N/A
+Incorrectly marked as delivered
+FLM08
+Inline
+N/A
+N/A
+AGENT
+Agent behavioural issue
+AGT01
+Inline
+N/A
+N/A
+Buyer behavioural issue
+AGT02
+Inline
+N/A
+N/A
+PAYMENT
+Refund not received
+PMT01
+Inline
+N/A
+N/A
+
+
+In the event that Seller Apps do not adhere to the aforementioned timelines, Flipkart Internet Pvt. Ltd. will be entitled to take necessary actions, which may include resolution in favour of the Buyer. Internet Pvt. Ltd.  shall be entitled to deduct the settlement amount from the payout to the seller APP for such order.
+
+If a Buyer App wishes to specify certain criteria regarding visibility of Seller Apps related to customer issues, they can declare such criteria on the Declaration page under the section ‘Why may a merchant not be visible on Buyer App?
+
+
+Buyer Finder Fee:
+Buyer App will charge Seller App a Fee as agreed between the Parties in its Confirmation (“Fees”). 
+Buyer App will provide a unique reference number against the Order (Order ID) placed by the Buyer and the same will be used as the reference to raise the invoice for payment of Fees. 
+Tax Obligations on Fee:
+The Fees quoted is exclusive of goods and service tax which shall be additional.
+If Buyer App is collecting payment from Buyer, TDS as applicable shall be remitted to Seller App on Fees, once in a quarter post submission of Quarterly TDS statement by them. 
+Tax obligations on the value of the Product: The Parties agree that tax obligations in respect of transactions undertaken through the ONDC Network shall be discharged in accordance with applicable law.
+TDS: The Party that is responsible for making payment to the Seller shall deduct tax at source in accordance with the applicable law. Where the Seller App is a Market Place Seller Node (MSN) and is responsible for making payment to the Seller, the Seller App shall undertake such deduction. 
+TCS under GST: For supplies Other than supplies notified under Section 9(5) of the GST law the Party that is responsible for making payment to the Seller shall collect and deposit tax at source under applicable GST law. Where the Seller App (including when acting as an MSN) makes payment to the Seller, the Seller App shall collect such tax.
+Section 9(5) GST: For supplies notified under Section 9(5) of the GST laws, where the Seller App is acting as a Market Place Seller Node (MSN), the Seller App shall be responsible for discharge of applicable GST. 
+General Obligations:
+All payments under this Agreement will be subject to deduction or withholding as required by any Applicable Law and as permitted under the Confirmations.
+Collection of Payment from Buyer: As mutually agreed by the Parties in their Confirmation. Further terms regarding payment collection including how the payment will be collected, withholding amount, settlement amount, Settlement Window, settlement type will be as per the Confirmations of the Party.
+Each Party shall use its own infrastructure, manpower, personnel and other facilities and bear its own expenses for the performance of the terms hereof.
+The Buyer App shall not make any warranties or guarantees concerning the Seller, Seller App or the Seller's goods/services, other than those provided by the Seller or the Seller App in writing to the Buyer App pursuant to this Agreement.
+Except for costs incurred under Clause 10.1, it is agreed that each Party shall bear the costs of their respective legal costs in connection with the execution of this Agreement.  
+Representations and warranties: Each Party represents and warrants to the other Party that:
+it is duly organised and validly existing under the laws of India and has the full requisite right, power, and authority (corporate or otherwise) to enter into this Agreement and to deliver or perform the acts required of it under this Agreement;
+they have read, understood and agree to comply with the terms specified in this Agreement along with the Confirmation exchanged between the Parties, and the same shall form a legal, valid, and binding contract between the Parties with respect to this transaction;
+it has and shall maintain all necessary statutory and regulatory permissions, approvals, licences, consents or permits, from any third parties including any regulatory or government body as required by applicable law or regulations, that is necessary for the running and operation of its establishment for the conduct of its operations;
+it has and shall maintain all the title and ownership, licence, or right to use, as applicable, in all the IPR associated with it to use, distribute, or otherwise exploit in all manners permitted by this Agreement and/or the ONDC Network Policy;
+all information submitted by the Parties is truthful, lawful and accurate, as on the date of this Agreement;
+it has complied with or will ensure and will continue to ensure compliance with all conditions provided under the Applicable Laws in order to enable it to lawfully enter into and exercise its rights and perform its obligations under this Agreement;
+the fulfilment or compliance with the terms and provisions hereof, will not conflict with, or result in a breach of the provisions of any agreement, instrument, order, judgement, decree, statute, law, rule, or regulation to which they are subject to or the IPRs of any third party, or require any consent, approval or other action by any court, tribunal, administrative or Competent Authority, or result in a violation of any law, regulation, administrative order or judicial order applicable to it or its business or assets;
+it shall not make any statement to defame or disparage the other Party or adversely affect the other Party’s reputation, except when such statement is truthful and is reasonably necessary for the Party to enforce or defend its rights under this Agreement, or is required by a court of law, mediator, arbitrator or regulatory or legislative body with jurisdiction to order the Party to make such statement; 
+it shall comply with the ONDC Network Participant Agreement and ONDC Network Policy or any other policies as prescribed by ONDC; and
+all services will be performed in a professional manner consistent with the industry standards reasonably applicable to such services.
+ INDEPENDENT PARTIES: 
+The Parties agree that they are independent parties and are not, or shall not claim to be, an agent / representative of the other Party. It is understood between the Parties that neither Party is the legal representative of the other Party. 
+Nothing contained herein shall be deemed to create any association, partnership, joint venture or relationship of principal and agent or master and servant or, employer and employee between the Parties;
+Each Party including their staff/employees, agents, personnel have no authority/ right to bind the other Party in any manner and each Party shall not do any act, deed or thing which has the effect of binding the other Party or creating any obligation and / or liability upon the other Party otherwise than as specifically provided herein. 
+Each Party shall be solely liable for all acts of its staff / employee /End User that may cause any actual and / or potential damage, loss or injury to the other Party.
+Indemnity and Limitation of Liability
+Either Party (“Indemnifying Party”) hereby agrees to indemnify, defend and hold the other Party, its director, officers, employees, service providers, and agents (“Indemnified Party”) harmless from and against claims, demands, actions, liabilities, costs, interest, injuries, losses, judgments, fines penalties, proceedings, action or demand, damages, and expenses of any nature whatsoever (including all legal and other costs, charges and expenses) incurred or suffered by the Indemnified Party, directly arising out of third party claim in connection with any or all of the following:
+any wrongful or negligent act or omission of the Indemnifying Party, including but not limited to, sharing incorrect or incomplete information with the Indemnified Party in connection with a transaction on the ONDC Network;
+any breach by Indemnifying Party of its obligations, undertakings, warranties or covenants under this Agreement or the ONDC Network Policy or the ONDC Network Participant Agreement;
+any breach of Applicable Law by the Indemnifying Party;
+Breach of data or corruption of data or information whether due to negligent performance or non-performance of the Indemnifying Party or its employees, agents, representatives etc. or for any reason whatsoever attributable to Indemnifying Party; and
+any third-party action or claim made against the Indemnified Party, by reason of any actions undertaken/omission to take any action by the Indemnifying Party under this Agreement.
+Disclosure or access of the Confidential Information inconsistent with the terms of this Agreement
+Seller App acknowledges that Buyer App does not control and is not liable to or responsible for the quality, quantity, safety, suitability of products, lawfulness or availability of the products or services offered for sale. The Buyer App shall not make any warranties or guarantees concerning the Seller, Seller App or the Seller's Products, other than those provided by the Seller or the Seller App to the Buyer App pursuant to this Agreement. The Buyer App shall indemnify, defend and hold harmless the Seller App or the Seller from and against all claims, actions and proceedings arising out of or resulting from the violation of this clause.
+Notwithstanding the above, each Party shall be liable for any loss or damage caused to shipments that are attributable to any acts of commission or omission of such Party or its employees, agents, assigns, third-parties engaged by it or other representatives to the extent of the value of the Products involved or as mutually decided in its Confirmation.
+Each Party shall also independently be liable for the services offered by it to the End Users, Buyers and other Network Participants, as per the relevant terms and conditions of each Party. 
+Data Protection
+The Parties may share Personal Data of its End Users for fulfilling Order placed by the Buyers (Specified Purpose).
+Each Party (and shall procure that its employees shall) comply with all Data Protection Legislation and such compliance shall include, but not be limited to, compliance to any rules, orders, or notification (where applicable) under the Data Protection Legislation.
+For the purpose of this Agreement, “Data Protection Legislation” means all legislation and regulations relating to the protection of Personal Data and processing, storage, usage, collection and/or application of Personal Data or privacy of an individual including (without limitation):
+The Information Technology Act, 2000 (as amended from time to time), including the rules framed thereunder or any other legislation applicable including the Digital Personal Data Protection Act, 2023;
+All other guidelines or codes of conduct relating to the protection of Personal Data and processing, storage, usage, collection and/or application of Personal Data or privacy of an individual issued by any Competent Authority; 
+Any other Applicable Law solely relating to the protection of Personal Data and processing, storage, usage, collection and/or application of Personal Data or privacy of an individual.
+“Personal Data” shall have the same meaning as ascribed to it under the Information Technology Act, 2000 (as amended from time to time) or the Digital Personal Data Protection Act, 2023, whichever is in effect.
+Each Party agrees to only undertake processing of Personal Data in accordance with applicable law. Parties grant each other the right to take such steps in the processing of Personal Data on behalf of each other as are necessary for their performance obligations under this Agreement.
+For the purposes of this Agreement, the Parties shall not process or transfer any Personal Data to any third-party unless it can be necessary for the performance under this Agreement.
+Parties shall at all times have appropriate technical and organisational measures in place:-
+to prevent unauthorised or unlawful processing of any Personal Data;
+to protect any Personal Data against accidental loss, destruction or damage;
+to include taking reasonable steps to ensure the reliability of its employees/contractor having access to the Personal Data; and
+having regard to the state of technological development and the cost of implementing those measures so as to ensure a level of security appropriate to:- (i) the harm that may result from breach of those measures; and (ii) the nature of the Personal Data to be protected. 
+If either Party receive a request from any person for access to Personal Data or any other request relating to obligations under the Data Protection Legislation, the other Party shall provide full co-operation and assistance in relation to any such complaint or request  only to the extent necessary under Data Protection Legislation
+Each Party agrees to not process Personal Data shared by the other Party for purposes other than the Specified Purpose. Processing of Personal Data for purposes other than the Specified Purpose can only be done after obtaining an explicit consent from the End User.
+Confidential Information
+Each Party acknowledges and agrees that all tangible and intangible information obtained, developed or disclosed, including all documents, data, papers, statements, any business / customer information, trade secrets and processes of the other Party relating to  such Party’s business practices, in connection with this Agreement or otherwise, is deemed by such disclosing Party and shall be considered at all times to be confidential and proprietary information of such Disclosing Party (Confidential Information); 
+The Receiving Party shall ensure that Confidential Information is not used or permitted to be used in any manner incompatible or inconsistent with that authorized by the Disclosing Party. The Receiving Party confirms that Confidential Information will be safeguarded by the Receiving Party and the Receiving Party will take all necessary action to protect Confidential Information against misuse, loss, destruction, alterations or deletions thereof. 
+The receiving Party shall restrict disclosure of the confidential Information solely to those persons with a need to know and not disclose it to any other person and advise those persons and ensure of their obligations with respect to the Confidential Information. 
+The provisions of this Clause shall be applicable and binding on the Parties, except to the extent that such Confidential Information (i) is already in the public domain; (ii) is required or requested to be disclosed under any applicable law or by any judicial/regulatory body; (iii) was previously known or already in the lawful possession of the Receiving Party, prior to disclosure by the Disclosing Party or the Customers; or (iv) has been independently developed / obtained by the Receiving Party without reference to any Confidential Information furnished by the Disclosing Party or the Customers.   
+Notwithstanding anything herein contained, Clause 8.2 shall survive a term of 3 (three) years from the termination of this Agreement or for such period as required under Applicable Law, whichever is longer. 
+If the Receiving Party is directed by court order or other legal or regulatory request or similar process to disclose information recorded on any documents or any of the Disclosing Party’s Confidential Information, the Receiving Party shall within reasonable time possible notify the Disclosing Party in writing, in sufficient detail upon receipt of such court order, legal or regulatory request or similar process, in order to permit the Disclosing Party to make an application for an appropriate protection order (which the Disclosing Party  may pursue at its own expenses). 
+Intellectual Property: All intellectual property rights of the Parties including without limitation trademarks, trade name, logo, copyrights, advertising copy, material, graphics, and etc., shall remain the sole property of the respective Parties. It is understood by the Parties that the usage of the other Party’s name and logo shall be solely used for the purpose of this Agreement and will be subject to prior written approval of the respective Party on the terms to be stipulated by such Party. It is hereby clarified that any usage of name and logo and/or any other intellectual property rights of a Party shall not create any right, title or interest in respect of such name, logo or intellectual property in favour of the Party using the same.
+Performance Exceptions
+Force Majeure: If any Party to this Agreement is unable to meet its obligations under this Agreement as a result of flood, earthquake, storm, other acts of God including fire, derailment, accident, strike, lockout, explosion, war, insurrection, riot, embargo, terrorist activity, epidemic, pandemic, act of government or governmental agency or other similar cause beyond the reasonable control ("Force Majeure") of the parties, such party will be excused from performing its obligations for the duration of the Force Majeure.
+If either Party is unable to meet its obligations under this Agreement as a result of a disruption in the ONDC Network, such party will be excused from performing its obligations for the duration of the disruption
+The Party affected by such a Force Majeure event shall promptly notify the other Party in writing specifying the nature of the Force Majeure and of the anticipated delay in the performance of this Agreement, and as of the date of that notification, the Party affected may suspend the performance of this Agreement until the cause of the delay ends. 
+Governing Law
+Each Party agrees that any dispute or claim relating to, the enforceability of, or the termination of this agreement is to be governed by and construed in accordance with the laws of India and the Parties submit to the non-exclusive jurisdiction of courts as provided in the Confirmation.
+Arbitration: The Parties hereto shall initially attempt to resolve all claims, disputes or controversies arising under, out of or in connection with this Agreement by conducting good faith negotiations amongst themselves. If the Parties are unable to resolve the matter following good faith negotiations, within a period of 30 (thirty) days) the Parties shall settle the dispute through arbitration to be conducted in accordance with the Arbitration and Conciliation Act, 1996 (with amendments thereto).
+Miscellaneous
+Entire Agreement. This Agreement constitutes the entire agreement and understanding of the Parties with respect to its subject matter. Each of the parties acknowledges that in entering into this Agreement it has not relied on any oral or written representation, warranty or other assurance (except as provided for or referred to in this Agreement) and waives all rights and remedies which might otherwise be available to it in respect thereof, except those specifically provided under the ONDC Network Policies and applicable law, except that nothing in this Agreement will limit or exclude any liability of a party for fraud.
+Amendments: An amendment, modification or waiver in respect of this Agreement shall be considered effective only to the extent that such amendments are mutually agreed to between the Parties, for the particulars agreed upon in clauses 2, 3, 4 and 5 of this Agreement.
+Survival of Obligations: It is agreed that such provisions and obligations which, by their very nature, survive the termination of this Agreement, shall continue to be binding on the Parties.
+No Waiver of Rights: A failure or delay in exercising any right, power or privilege in respect of this Agreement will not be presumed to operate as a waiver, and a single or partial exercise of any right, power or privilege will not be presumed to preclude any subsequent or further exercise, of that right, power or privilege or the exercise of any other right, power or privilege.
+Headings: The headings used in this Agreement are for convenience of reference only and are not to affect the construction of or to be taken into consideration in interpreting this Agreement.
+Term and Termination: 
+The Agreement shall come into force on the acceptance of the terms by the Seller App in the Confirmation.
+Either Parties may terminate this Agreement upon providing 30 (thirty)  days’ prior written notice if the other party is in breach of any of its obligations, found in breach of representations or warranties, or any other material terms as contained in this Agreement. However, such termination shall not affect any rights or obligations of the Parties that have accrued prior to the termination of the Agreement.
+
+
